@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5d5dc5-c189-4ea2-8240-0feb6f3d8b4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/CNN.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Client/Run/Run.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Client/Utils/StringUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Client/Run/paramsXML.xml" />
-      <change type="DELETED" beforePath="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\Test1.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/CalaisSoap.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/CalaisSoap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/ObjectFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenCalaisClient.iml" afterPath="$PROJECT_DIR$/OpenCalaisClient.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/OpenCalaisClient_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/OpenCalaisClient_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/DataObjects/SocialTags.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DataObjects/SocialTags.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/DataObjects/Topics.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DataObjects/Topics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpenCalaisClient.iws" />
@@ -162,7 +142,7 @@
       <file leaf-file-name="OpenCalais.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.656304" vertical-offset="606" max-vertical-offset="1751">
+            <state line="55" column="5" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.5682211" vertical-offset="606" max-vertical-offset="1751">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -898,12 +878,17 @@
       <workItem from="1406855902183" duration="1387000" />
       <workItem from="1406860003791" duration="4143000" />
       <workItem from="1406864642985" duration="234000" />
-      <workItem from="1406865376495" duration="13898000" />
+      <workItem from="1406865376495" duration="13930000" />
     </task>
+    <task id="LOCAL-00001" summary="HAHAHA">
+      <created>1406894202965</created>
+      <updated>1406894202965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37205000" />
+    <option name="totallyTimeSpent" value="37237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="984" extended-state="0" />
@@ -951,6 +936,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="HAHAHA" />
+    <option name="LAST_COMMIT_MESSAGE" value="HAHAHA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1308,7 +1295,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.656304" vertical-offset="606" max-vertical-offset="1751">
+        <state line="55" column="5" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.5682211" vertical-offset="606" max-vertical-offset="1751">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
