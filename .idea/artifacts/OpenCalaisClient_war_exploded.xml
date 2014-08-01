@@ -7,6 +7,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="OpenCalaisClient" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: xerces:xmlParserAPIs:2.6.2" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.4.01" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.10" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.10" />
+        </element>
       </element>
     </root>
   </artifact>

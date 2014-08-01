@@ -39,6 +39,6 @@ public interface CalaisSoap {
         @WebParam(name = "content", targetNamespace = "http://clearforest.com/")
         String content,
         @WebParam(name = "paramsXML", targetNamespace = "http://clearforest.com/")
-        String paramsXML);
+        String paramsXML );
 
 }
