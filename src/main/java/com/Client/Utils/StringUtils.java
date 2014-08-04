@@ -47,8 +47,8 @@ public class StringUtils {
             catch (IOException e) {
                e.printStackTrace();
             }
-
         }
         return sb.toString();
     }
+
 }

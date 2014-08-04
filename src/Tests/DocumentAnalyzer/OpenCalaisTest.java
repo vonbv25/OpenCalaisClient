@@ -26,17 +26,8 @@ public class OpenCalaisTest {
 
     @Before
     public void setUp() throws Exception {
-
         output = OpenCalais.getCalaisRDFText(content, APIKEY);
-
     }
-
-//    @TryMoMagLock
-//    public void vonNanaMan() throws Exception {
-//        if (von == "banana_man")
-//            System.out.print("kill me");
-//     }
-
     @Test
     public void getCalaisRDFTextTest(){
 
@@ -46,10 +37,7 @@ public class OpenCalaisTest {
 
     @Test
     public void getCalaisRdfTest() throws Exception {
-
-        Document document = OpenCalais.getCalaisRdf(content,APIKEY);
-       System.out.println( document.toString() );
-
+        System.out.println(output);
     }
 
 

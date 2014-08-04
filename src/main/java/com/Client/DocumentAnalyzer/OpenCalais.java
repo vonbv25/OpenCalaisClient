@@ -28,15 +28,12 @@ public class OpenCalais {
         strParams.append("</c:params>");
     }
 
-
-
     public static String getCalaisRDFText(String content, String APIKEY) throws Exception {
 
         try { // Call Web Service Operation
             Calais service = new Calais();
             CalaisSoap port = service.getCalaisSoap();
             String result = port.enlighten(APIKEY, content, getParamsXml());
-
             return result;
 
         } catch (Exception ex) {
@@ -55,8 +52,6 @@ public class OpenCalais {
         return params;
     }
 
-
-
     public static Document stringToDom(String xmlSource) throws Exception {
 
         if(xmlSource == null)
@@ -73,14 +68,13 @@ public class OpenCalais {
         } catch (IOException e) {
             throw new IllegalArgumentException(" Could not parse string into XML output", e);
         }
-
     }
 
     public static Document getCalaisRdf(String content,String APIKEY) throws Exception {
-
         return stringToDom(getCalaisRDFText(content,APIKEY));
-
     }
+
+
 
 
 

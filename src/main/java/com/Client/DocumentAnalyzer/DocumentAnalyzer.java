@@ -1,5 +1,8 @@
 package com.Client.DocumentAnalyzer;
 
+import jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException;
+import org.w3c.dom.Document;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -10,6 +13,8 @@ import java.io.IOException;
 public class DocumentAnalyzer {
 
     public static boolean analyze(String filePath, String APIKEY) {
+
+
 
         return true;
     }
@@ -27,18 +32,33 @@ public class DocumentAnalyzer {
                 out.append("\r\n");
             }
         } catch (IOException e) {
-            throw new IllegalArgumentException("(EE) Could read text file (" + filePath + ")", e);
+            throw new IllegalArgumentException("Could read text file (" + filePath + ")", e);
         } finally {
             if (in != null) {
                 try {
                     in.close();
                 } catch (IOException e) {
-                    System.out.println("(WW) could not close input reader for " + filePath);
+                    System.out.println("could not close input reader for " + filePath);
                 }
             }
         }
         return out.toString();
     }
+
+    private String getTextfromOpenCalais(String content, String APIkey) throws Exception{
+        return OpenCalais.getCalaisRDFText(content,APIkey);
+    }
+
+    private static void serializer(Document document) {
+
+
+    }
+
+
+
+
+
+
 
 
 }
