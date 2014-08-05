@@ -3,8 +3,15 @@ package com.Client.DocumentAnalyzer;
 import com.Client.Calais;
 import com.Client.CalaisSoap;
 import com.Client.Utils.StringUtils;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+import com.sun.jersey.api.client.config.ClientConfig;
+import com.sun.jersey.api.client.config.DefaultClientConfig;
 import org.xml.sax.InputSource;
 import org.w3c.dom.Document;
+
+import javax.security.auth.login.Configuration;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -70,8 +77,37 @@ public class OpenCalais {
         }
     }
 
-    public static Document getCalaisRdf(String content,String APIKEY) throws Exception {
-        return stringToDom(getCalaisRDFText(content,APIKEY));
+    public static Document getCalaisRdf(String content) throws Exception {
+        return stringToDom(getCalaisRdfText(content));
+    }
+
+
+    /**
+     * REST service Resoponse for URL
+     * @param url
+     * @return
+     * @throws Exception
+     */
+    public static String getCalaisRdfText(String url) throws Exception {
+        ClientConfig clientConfig = new DefaultClientConfig();
+        Client client = Client.create(clientConfig);
+
+        System.out.println("Submit Linked Data Call (" + url + ") ... ");
+
+        WebResource webResource = client.resource(url);
+        webResource.accept(new String[] { "application/xml" });
+
+        // body is a hard-coded string, with replacements for the variable bits
+        ClientResponse response = webResource.get(ClientResponse.class);
+
+        if(response.getStatus() == 200)
+            return response.getEntity(String.class);
+
+        System.out.println(StringUtils.replace(
+                "httpstatus.warning"
+                , "$status", response.getStatus()));
+        System.out.println(response.getEntity(String.class));
+        return null;
     }
 
 

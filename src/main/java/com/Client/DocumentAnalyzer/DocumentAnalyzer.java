@@ -1,5 +1,6 @@
 package com.Client.DocumentAnalyzer;
 
+import com.sun.org.apache.xerces.internal.dom.DocumentImpl;
 import jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException;
 import org.w3c.dom.Document;
 
@@ -49,7 +50,10 @@ public class DocumentAnalyzer {
         return OpenCalais.getCalaisRDFText(content,APIkey);
     }
 
-    private static void serializer(Document document) {
+
+    private Document getDocumentFromRDF(String content) {
+
+        return new DocumentImpl();
 
 
     }

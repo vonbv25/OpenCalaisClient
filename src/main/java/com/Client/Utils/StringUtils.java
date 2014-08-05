@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
  * Created by OJT4 on 8/1/14.
  */
 public class StringUtils {
+
     public static String replace(String text, String repl, Object with) {
         int max = 1;
         StringBuffer buf = new StringBuffer(text.length());
@@ -23,6 +24,17 @@ public class StringUtils {
         }
         buf.append(text.substring(start));
         return buf.toString();
+    }
+
+
+    public static String getContentsFromResource(String filename) {
+        try {
+            String fileContents = getFileContents(StringUtils.class.getResourceAsStream(filename));
+            return fileContents;
+        }catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private static String getFileContents(InputStream inputStream) {
