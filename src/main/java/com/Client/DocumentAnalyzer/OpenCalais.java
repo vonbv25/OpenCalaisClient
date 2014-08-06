@@ -11,7 +11,7 @@ import com.sun.jersey.api.client.config.DefaultClientConfig;
 import org.xml.sax.InputSource;
 import org.w3c.dom.Document;
 
-import javax.security.auth.login.Configuration;
+import com.Client.DocumentAnalyzer.Configuration;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -51,11 +51,11 @@ public class OpenCalais {
     private static String getParamsXml() throws Exception {
         String params = strParams.toString();
         params = StringUtils.replace(params, "${CONTENT_TYPE}",
-                "TEXT/RAW");
+                Configuration.getCurrent_config().getContentType());
         params = StringUtils.replace(params, "${OUTPUT_FORMAT}",
-                "XML/RDF");
+                Configuration.getCurrent_config().getOutputFormat());
         params = StringUtils.replace(params, "${SUBMITTER}",
-                "OpenCalaisClient");
+                Configuration.getCurrent_config().getSubmitter());
         return params;
     }
 
@@ -103,8 +103,7 @@ public class OpenCalais {
         if(response.getStatus() == 200)
             return response.getEntity(String.class);
 
-        System.out.println(StringUtils.replace(
-                "httpstatus.warning"
+        System.out.println(StringUtils.replace(Configuration.getCurrent_config().getStatusWarning()
                 , "$status", response.getStatus()));
         System.out.println(response.getEntity(String.class));
         return null;
