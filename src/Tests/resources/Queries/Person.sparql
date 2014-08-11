@@ -1,0 +1,17 @@
+PREFIX c:<http://s.opencalais.com/1/pred/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?name ?nationality ?persontype ?resourceEntity ?birthdate ?gender ?resourceEntity
+    WHERE {
+    {
+           ?resourceEntity c:name ?name .
+           ?resourceEntity c:nationality ?nationality .
+           ?resourceEntity c:persontype ?persontype .
+           } UNION {
+           ?attributes c:birthdate ?birthdate .
+           ?attributes c:gender ?gender .
+           ?attributes c:person ?resourceEntity .
+           }
+
+           ?resourceEntity rdf:type <http://s.opencalais.com/1/type/em/e/Person> .
+    }

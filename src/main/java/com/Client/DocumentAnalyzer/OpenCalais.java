@@ -29,13 +29,13 @@ public class OpenCalais {
     static {
         strParams.append("<c:params xmlns:c=\"http://s.opencalais.com/1/pred/\"");
         strParams.append(" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">");
-        strParams.append("<c:processingDirectives c:contentType=\"${CONTENT_TYPE}\" c:outputFormat=\"${OUTPUT_FORMAT}\"></c:processingDirectives>");
+        strParams.append("<c:processingDirectives c:enableMetadataType=\"GenericRelations,SocialTags\" c:contentType=\"${CONTENT_TYPE}\" c:outputFormat=\"${OUTPUT_FORMAT}\"></c:processingDirectives>");
         strParams.append("<c:userDirectives c:allowDistribution=\"true\" c:allowSearch=\"true\" c:externalID=\"17cabs901\" c:submitter=\"${SUBMITTER}\"></c:userDirectives>");
         strParams.append("<c:externalMetadata c:caller=\"SemanticProxy\"/>");
         strParams.append("</c:params>");
     }
 
-    public static String getCalaisRDFText(String content, String APIKEY) throws Exception {
+    public static String getCalaisRDFText(String content, String APIKEY)  {
 
         try { // Call Web Service Operation
             Calais service = new Calais();
@@ -108,6 +108,8 @@ public class OpenCalais {
         System.out.println(response.getEntity(String.class));
         return null;
     }
+
+
 
 
 

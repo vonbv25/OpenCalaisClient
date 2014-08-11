@@ -2,7 +2,9 @@ package com.Client.Utils;
 
 
 import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSetRewindable;
 import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.sparql.resultset.ResultSetMem;
 import com.hp.hpl.jena.sparql.util.FmtUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -10,6 +12,7 @@ import org.w3c.dom.Node;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
+import com.hp.hpl.jena.query.ResultSet;
 
 /**
  * Created by OJT4 on 8/4/14.
@@ -49,6 +52,30 @@ public class RDFXMLUtils {
         }
         return null;
     }
+
+
+    public static void builldXml(Node paNode, String resultName,
+                           ResultSet resultSet) {
+        ResultSetRewindable resultSetRewindable = new ResultSetMem(resultSet);
+        int numCols = resultSetRewindable.getResultVars().size();
+
+        while (resultSetRewindable.hasNext()) {
+            Node resultNode = paNode;
+            if(resultName != null && !resultName.equals(""))
+                resultNode = paNode.appendChild(paNode.getOwnerDocument()
+                        .createElement(resultName));
+
+            QuerySolution rBind = resultSetRewindable.nextSolution();
+            for (int col = 0; col < numCols; col++) {
+                String colName = (String) resultSet.getResultVars().get(col);
+                String colValue = RDFXMLUtils.getVarValueAsString(rBind, colName);
+                resultNode.appendChild(paNode.getOwnerDocument().createElement(colName));
+                resultNode.getLastChild().appendChild(paNode.getOwnerDocument().createTextNode(colValue));
+            }
+        }
+
+    }
+
 
 
 

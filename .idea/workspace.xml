@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5d5dc5-c189-4ea2-8240-0feb6f3d8b4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/all.sparql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/configuration/analyzer.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/entities.sparql" />
-      <change type="DELETED" beforePath="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\resources\entities.sparql" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/CNN.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/Company.sparql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/Person.sparql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/Products.sparql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/ProgrammingLanguage.sparql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/SocialTag.sparql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/Technology.sparql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/exacts.sparql" />
+      <change type="DELETED" beforePath="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\resources\CNN.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\resources\Queries\all.sparql" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\resources\Queries\entities.sparql" afterPath="$PROJECT_DIR$/src/Tests/resources/Queries/Geo.sparql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java" afterPath="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/RDFTest/RDFtest.java" afterPath="$PROJECT_DIR$/src/Tests/RDFTest/RDFtest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,28 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StringUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/StringUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1173">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analyzer.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/resources/configuration/analyzer.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RDFtest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tests/RDFTest/RDFtest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="629">
+            <state line="55" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1088">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,28 +93,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RDFXMLUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java">
+      <file leaf-file-name="OpenCalaisTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="45" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+            <state line="35" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.sparql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Person.sparql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="80" selection-start="554" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NameSpace.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/NameSpace.java">
+      <file leaf-file-name="Products.sparql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Products.sparql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="283" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="952">
+            <state line="15" column="92" selection-start="492" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.sparql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/entities.sparql">
+      <file leaf-file-name="ProgrammingLanguage.sparql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/ProgrammingLanguage.sparql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+            <state line="8" column="89" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
               </folding>
@@ -131,31 +133,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SomeTest1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/RDFTest/SomeTest1.java">
+      <file leaf-file-name="SocialTag.sparql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/SocialTag.sparql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="17" column="5" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenCalais.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java">
+      <file leaf-file-name="Technology.sparql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Technology.sparql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="16" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0" vertical-offset="778" max-vertical-offset="2244">
+            <state line="20" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.6307978" vertical-offset="0" max-vertical-offset="539">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#99#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/Configuration.java">
+      <file leaf-file-name="Company.sparql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Company.sparql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="41" selection-start="379" selection-end="379" vertical-scroll-proportion="0.6097561" vertical-offset="13" max-vertical-offset="1326">
-              <folding />
+            <state line="14" column="76" selection-start="519" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding>
+                <element signature="e#0#99#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,7 +167,18 @@
       <file leaf-file-name="DocumentAnalyzer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="1156">
+            <state line="112" column="0" selection-start="3815" selection-end="4053" vertical-scroll-proportion="-12.961538" vertical-offset="1567" max-vertical-offset="7548">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="46" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -197,18 +212,34 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/NameSpace.java" />
-        <option value="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/Tests/resources/entities.sparql" />
         <option value="$PROJECT_DIR$/src/Tests/resources/configuration/analyzer.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/sparqlUtils.java" />
         <option value="$PROJECT_DIR$/src/Tests/resources/Queries/all.sparql" />
-        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/entities.sparql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java" />
-        <option value="$PROJECT_DIR$/src/Tests/RDFTest/RDFtest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/entities.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/CompanyGeoProducts.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/others.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/Products.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/Geo.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/Person.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/exacts.sparql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/CNN.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/SocialTag.sparql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Client/Utils/sparqlUtils.java" />
+        <option value="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/programmingLanguage.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/someEntites.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/Company.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/DocumentAnalyzer/CNN.txt" />
+        <option value="$PROJECT_DIR$/output.xml" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/ProgrammingLanguages.sparql" />
+        <option value="$PROJECT_DIR$/src/Tests/RDFTest/RDFtest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/ProgrammingLanguage.sparql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/Tests/resources/Queries/Technology.sparql" />
       </list>
     </option>
   </component>
@@ -316,9 +347,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="width" value="1280" />
-    <option name="height" value="984" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -368,28 +400,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OpenCalaisClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpenCalaisClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpenCalaisClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,6 +492,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DocumentAnalyzer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -619,6 +633,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpenCalaisClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpenCalaisClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataObjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -643,14 +687,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\DocumentAnalyzer" />
       <recent name="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\resources\Queries" />
       <recent name="C:\Users\OJT4\Documents\OpenCalaisClient\src\Tests\resources" />
       <recent name="C:\Users\OJT4\Documents\OpenCalaisClient\src\main\resources" />
       <recent name="C:\Users\OJT4\Documents\OpenCalaisClient\src\main" />
-      <recent name="C:\Users\OJT4\Documents\OpenCalaisClient\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RDFtest">
+  <component name="RunManager" selected="JUnit.OpenCalaisTest">
     <configuration default="false" name="Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="OpenCalaisClient" />
@@ -1003,8 +1047,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RDFtest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.OpenCalaisTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.OpenCalaisTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RDFtest" />
         <item index="2" class="java.lang.String" itemvalue="Application.Run" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.Test1" />
       </list>
@@ -1051,7 +1095,9 @@
       <workItem from="1407118578480" duration="16715000" />
       <workItem from="1407200853162" duration="25607000" />
       <workItem from="1407286738908" duration="9872000" />
-      <workItem from="1407298369986" duration="12496000" />
+      <workItem from="1407298369986" duration="12669000" />
+      <workItem from="1407461191247" duration="20375000" />
+      <workItem from="1407719469920" duration="25577000" />
     </task>
     <task id="LOCAL-00001" summary="HAHAHA">
       <created>1406894202965</created>
@@ -1069,11 +1115,15 @@
       <created>1407238659124</created>
       <updated>1407238659124</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HAHAHA&#10;">
+      <created>1407321435204</created>
+      <updated>1407321435204</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101968000" />
+    <option name="totallyTimeSpent" value="148093000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1096,36 +1146,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="0" width="1280" height="984" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44087255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2253635" sideWeight="0.32978722" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272101" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272101" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23987292" sideWeight="0.32919255" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03764321" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.037156705" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24468085" sideWeight="0.66873705" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49824563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23667206" sideWeight="0.66873705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38231918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1153,151 +1203,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0.jar!/com/hp/hpl/jena/rdf/model/ModelFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/rdf/model/ModelFactoryBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="35" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/jre/lib/rt.jar!/com/sun/xml/internal/bind/v2/runtime/output/NamespaceContextImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="4" selection-end="117" vertical-scroll-proportion="0.036876354" vertical-offset="0" max-vertical-offset="1751" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/javax/security/auth/login/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="22" selection-start="7842" selection-end="7842" vertical-scroll-proportion="4.1861863" vertical-offset="0" max-vertical-offset="10115" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/javax/xml/xpath/XPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="17" selection-start="3195" selection-end="3195" vertical-scroll-proportion="0.0" vertical-offset="2816" max-vertical-offset="5100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.2003367" vertical-offset="0" max-vertical-offset="594" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/org/w3c/dom/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="38" selection-start="6343" selection-end="6347" vertical-scroll-proportion="-0.8777969" vertical-offset="2754" max-vertical-offset="15640" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/CalaisSoap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.6850258" vertical-offset="95" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="9" selection-start="10784" selection-end="10784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/ObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="1684" selection-end="1684" vertical-scroll-proportion="2.1055045" vertical-offset="0" max-vertical-offset="4165" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/2.12.0/jena-arq-2.12.0.jar!/com/hp/hpl/jena/sparql/engine/ResultSetCheckCondition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1585" selection-end="1585" vertical-scroll-proportion="-12.84" vertical-offset="291" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-3.92" vertical-offset="412" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="489" selection-end="489" vertical-scroll-proportion="-7.04" vertical-offset="11" max-vertical-offset="306" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="323" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/rdf/model/ModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="5863" selection-end="5863" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="4896" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/rdf/model/impl/ModelMakerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="1581" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/graph/impl/BaseGraphMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1156" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/graph/impl/SimpleGraphMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="1683" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/graph/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/graph/impl/GraphBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="2204" selection-end="2204" vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="7004" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/mem/GraphMemBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="415" max-vertical-offset="1530" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/mem/GraphMem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="2584" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/2.12.0/jena-core-2.12.0-sources.jar!/com/hp/hpl/jena/mem/HashCommon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="0" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="6205" />
@@ -1361,70 +1266,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/resources/CNN.txt">
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/configuration/analyzer.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="43" selection-start="3748" selection-end="3748" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/all.sparql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="100" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+        <state line="7" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.23106796" vertical-offset="0" max-vertical-offset="515" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/CalaisSoap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="17" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="748">
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/sparqlUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DataObjects/NameEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1020">
+        <state line="7" column="13" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DataObjects/Topics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1173">
+        <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding>
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#364#365#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#526#527#0" expanded="false" />
+            <element signature="e#558#559#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DataObjects/SocialTags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DataObjects/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1037">
+        <state line="8" column="13" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar!/org/apache/xerces/util/DOMUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="35" selection-start="4238" selection-end="4238" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/NameSpace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="283" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+        <state line="34" column="20" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/resources/configuration/analyzer.properties">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="86" column="0" selection-start="2445" selection-end="2445" vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="6069">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/FileReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/entities.sparql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+        <state line="57" column="0" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1156">
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#2135#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/2.12.0/jena-arq-2.12.0-sources.jar!/com/hp/hpl/jena/query/QueryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="0" selection-start="4990" selection-end="4990" vertical-scroll-proportion="0.3326572" vertical-offset="1944" max-vertical-offset="3672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/2.12.0/jena-arq-2.12.0-sources.jar!/com/hp/hpl/jena/sparql/lang/SPARQLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.3326572" vertical-offset="108" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="76" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="3094">
+          <folding>
+            <element signature="e#0#5664#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/javax/xml/xpath/XPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="6" selection-start="8295" selection-end="8295" vertical-scroll-proportion="0.36820084" vertical-offset="3156" max-vertical-offset="5100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/org/w3c/dom/NodeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="17" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="629">
+          <folding>
+            <element signature="e#0#1815#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/org/w3c/dom/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="7" selection-start="7406" selection-end="7425" vertical-scroll-proportion="0.0" vertical-offset="2952" max-vertical-offset="15640">
+          <folding>
+            <element signature="e#0#42446#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/sparqlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="83" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-sources.jar!/org/apache/xerces/util/DOMUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="713" column="25" selection-start="25174" selection-end="25174" vertical-scroll-proportion="0.0" vertical-offset="11465" max-vertical-offset="14943">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1435,28 +1457,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/OpenCalais.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0" vertical-offset="778" max-vertical-offset="2244">
+        <state line="77" column="0" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="4165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/DocumentAnalyzer/CNN.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/Utils/RDFXMLUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="57" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/exacts.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Geo.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="77" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Person.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="80" selection-start="554" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Products.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="92" selection-start="492" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Company.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="76" selection-start="519" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#99#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/RDFTest/RDFtest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="629">
+        <state line="55" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1088">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/Configuration.java">
+    <entry file="file://$PROJECT_DIR$/output.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="379" selection-end="379" vertical-scroll-proportion="0.6097561" vertical-offset="13" max-vertical-offset="1326">
+        <state line="6" column="46" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/ProgrammingLanguage.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="89" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding>
+            <element signature="e#0#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Client/DocumentAnalyzer/DocumentAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="0" selection-start="3815" selection-end="4053" vertical-scroll-proportion="-12.961538" vertical-offset="1567" max-vertical-offset="7548">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/DocumentAnalyzer/OpenCalaisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/SocialTag.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/resources/Queries/Technology.sparql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.6307978" vertical-offset="0" max-vertical-offset="539">
+          <folding>
+            <element signature="e#0#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

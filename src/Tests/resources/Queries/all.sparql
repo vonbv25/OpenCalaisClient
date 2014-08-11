@@ -1,4 +1,0 @@
-PREFIX c:<http://s.opencalais.com/1/pred/>
-PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-SELECT *
-	WHERE { ?s ?p ?o }
