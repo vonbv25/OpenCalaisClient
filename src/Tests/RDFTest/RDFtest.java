@@ -44,7 +44,7 @@ public class RDFtest {
                 "Archive Storage Engine for historical and audit data";
         String sample2 = "The company also declined to deny or confirm a report in The Boston Globe last month, which quoted a letter to State Street clients alerting them to a 42 percent decline " +
                 "this year in the State Street Limited Duration Bond Fund for institutional investors.";
-                String uri = OpenCalais.getCalaisRDFText(sample,OpenCalaisTest.APIKEY);
+                String uri = OpenCalais.getCalaisRdfText(sample,OpenCalaisTest.APIKEY);
 
 //        System.out.print(OpenCalais.getCalaisRdfText("" +
 //                "http://d.opencalais.com/comphash-1/1778bdda-c512-315d-a937-b29edc876437"+".rdf"));

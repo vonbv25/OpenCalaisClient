@@ -36,7 +36,8 @@ public class DocumentAnalyzer {
                 if (content.length()>MAX_DOC_SIZE) {
                     throw new IllegalArgumentException("must be less than 1000 characters");
                 }
-             content = OpenCalais.getCalaisRDFText(content,APIKEY);
+
+             content = analyzer.getTextfromOpenCalais(content, APIKEY);
             if (content.isEmpty()) {
                 return false;
             }
