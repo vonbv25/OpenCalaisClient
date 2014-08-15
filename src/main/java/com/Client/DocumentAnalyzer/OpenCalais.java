@@ -38,6 +38,12 @@ public class OpenCalais {
         strParams.append("</c:params>");
     }
 
+    /**
+     *
+     * @param content
+     * @param APIKEY
+     * @return
+     */
     public static String getCalaisRDFText(String content, String APIKEY)  {
 
         try { // Call Web Service Operation
@@ -49,6 +55,18 @@ public class OpenCalais {
         } catch (Exception ex) {
             throw new IllegalArgumentException("Error encoding URL",ex);
         }
+    }
+
+    public static String getCalaisRDFTextREST(String content , String APIKEY) {
+        try{
+            CalaisREST rest = new CalaisREST();
+            String result = rest.submit(APIKEY,content,getParamsXml());
+            return result;
+        }
+        catch (Exception e) {
+            throw new IllegalArgumentException("Error encoding URL",e);
+        }
+
     }
 
 

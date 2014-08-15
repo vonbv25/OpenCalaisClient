@@ -41,6 +41,7 @@ public class Configuration {
         return get("httpstatus.warning");
     }
 
+
     public String getOutputFilename() {
         return get("output.filename");
     }

@@ -1,18 +1,24 @@
 package com.Client.Utils;
 
 
+import com.Client.DocumentAnalyzer.Configuration;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSetRewindable;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.sparql.resultset.ResultSetMem;
 import com.hp.hpl.jena.sparql.util.FmtUtils;
+import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathFactory;
+import javax.xml.xpath.*;
+
 import com.hp.hpl.jena.query.ResultSet;
+import org.w3c.dom.NodeList;
+
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * Created by OJT4 on 8/4/14.
@@ -75,6 +81,32 @@ public class RDFXMLUtils {
         }
 
     }
+
+
+    public static NodeList getNodesFromDoc(XPath xpath, String xpathString, Document linkedData) throws Exception {
+        try {
+            XPathExpression expr = xpath.compile(xpathString);
+            return (NodeList) expr.evaluate(linkedData, XPathConstants.NODESET);
+        } catch (XPathExpressionException e) {
+            throw new IllegalArgumentException("xpathString provided in order to " +
+                    "analyze XML was wrong empty " +
+                    "or contained an error ("+xpathString+")", e);
+        }
+    }
+
+
+    public static void serializeDoc(Document outdoc) throws Exception {
+        try {
+            XMLSerializer serializer = new XMLSerializer();
+            serializer.setOutputCharStream(new FileWriter(Configuration.getCurrent_config().getOutputFilename()));
+            serializer.serialize(outdoc);
+        } catch (IOException e) {
+            throw new IllegalArgumentException(" XML Serialization Failed or could not find configuration data", e);
+        }
+
+    }
+
+
 
 
 

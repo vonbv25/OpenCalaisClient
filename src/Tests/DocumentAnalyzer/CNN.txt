@@ -1,23 +1,23 @@
-MySQL Community Edition is a freely downloadable version of the world's most popular open source database that is supported by an active community of open source developers and enthusiasts.
-
-MySQL delivers enterprise features, including:
-
-Partitioning to improve performance and management of very large database environments
-Row-based/Hybrid Replication for improved replication security
-Event Scheduler to create and schedule jobs that perform various database tasks
-XPath Support
-Dynamic General/Slow Query Log
-Performance/Load Testing Utility (mysqlslap)
-Improved! Full Text Search (faster, new dev templates)
-Improved! Archive engine (better compression, more features)
-Improved! User session and problem SQL identification
-Improved! MySQL embedded library (libmysqld)
-Additional INFORMATION_SCHEMA objects
-Faster data import operations (parallel file load)
-ACID Transactions to build reliable and secure business critical applications
-Stored Procedures to improve developer productivity
-Triggers to enforce complex business rules at the database level
-Views to ensure sensitive information is not compromised
-Information Schema to provide easy access to metadata
-Pluggable Storage Engine Architecture for maximum flexibility
-Archive Storage Engine for historical and audit data
+"MySQL Community Edition is a freely downloadable version of the world's most popular open source database that is supported by an active community of open source developers and enthusiasts.\n" +
+                "\n" +
+                "MySQL delivers enterprise features, including:\n" +
+                "\n" +
+                "Partitioning to improve performance and management of very large database environments\n" +
+                "Row-based/Hybrid Replication for improved replication security\n" +
+                "Event Scheduler to create and schedule jobs that perform various database tasks\n" +
+                "XPath Support\n" +
+                "Dynamic General/Slow Query Log\n" +
+                "Performance/Load Testing Utility (mysqlslap)\n" +
+                "Improved! Full Text Search (faster, new dev templates)\n" +
+                "Improved! Archive engine (better compression, more features)\n" +
+                "Improved! User session and problem SQL identification\n" +
+                "Improved! MySQL embedded library (libmysqld)\n" +
+                "Additional INFORMATION_SCHEMA objects\n" +
+                "Faster data import operations (parallel file load)\n" +
+                "ACID Transactions to build reliable and secure business critical applications\n" +
+                "Stored Procedures to improve developer productivity\n" +
+                "Triggers to enforce complex business rules at the database level\n" +
+                "Views to ensure sensitive information is not compromised\n" +
+                "Information Schema to provide easy access to metadata\n" +
+                "Pluggable Storage Engine Architecture for maximum flexibility\n" +
+                "Archive Storage Engine for historical and audit data"
