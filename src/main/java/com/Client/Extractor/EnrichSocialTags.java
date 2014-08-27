@@ -35,12 +35,11 @@ public class EnrichSocialTags extends AbstractEnricher {
             socialtag.appendChild(newnode);
             socialtag.removeChild(resourceNode);
 
-
-
 //            Node subjectNode = RDFXMLUtils.getNodeByName(technology, "subject");
 //            technology.removeChild(subjectNode);
 
             // TODO: cannot get subject URI of social tags or subject is not working rather?
+            //the resource URI must be in .rdf
             Document linkedData = OpenCalais.getCalaisRdf(resourceUri.substring(0, resourceUri.length() - 12
             ) + ".rdf");
 

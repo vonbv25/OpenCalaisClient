@@ -10,14 +10,13 @@ import org.w3c.dom.NodeList;
 import javax.xml.xpath.XPath;
 
 /**
- * Abstract class of Enrich Classes. Uses for OOP purposes.
+ * Abstract class of Enrich Classes.
  *
  * Created by OJT4 on 8/15/14.
  */
 public abstract class AbstractEnricher implements IEnricher {
 
     /**
-     *
      * @param xpath XML xpath of the linked data (resourceURI .rdf)
      * @param linkedData Document object of obtained linked Data
      * @param enrichMe Node of the enriched entities

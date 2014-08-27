@@ -35,9 +35,10 @@ public class EnrichTechnology extends AbstractEnricher {
 
 
 
-//            Node subjectNode = RDFXMLUtils.getNodeByName(technology, "subject");
-//            technology.removeChild(subjectNode);
+            Node subjectNode = RDFXMLUtils.getNodeByName(technology, "subject");
+            technology.removeChild(subjectNode);
 
+            //the resource URI must be in .rdf
             Document linkedData = OpenCalais.getCalaisRdf(resourceUri + ".rdf");
 
             if(linkedData!=null) {

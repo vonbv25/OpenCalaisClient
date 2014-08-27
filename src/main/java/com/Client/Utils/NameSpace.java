@@ -35,6 +35,8 @@ public class NameSpace implements NamespaceContext {
         return null;
     }
 
+
+
     @Override
     public Iterator getPrefixes(String uri) {
         List prefixes = new ArrayList();

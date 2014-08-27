@@ -100,6 +100,7 @@ public class RDFXMLUtils {
             XMLSerializer serializer = new XMLSerializer();
             serializer.setOutputCharStream(new FileWriter(Configuration.getCurrent_config().getOutputFilename()));
             serializer.serialize(outdoc);
+
         } catch (IOException e) {
             throw new IllegalArgumentException(" XML Serialization Failed or could not find configuration data", e);
         }

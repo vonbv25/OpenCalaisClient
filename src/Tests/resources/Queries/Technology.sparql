@@ -1,15 +1,17 @@
 PREFIX c:<http://s.opencalais.com/1/pred/>
 PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-	SELECT DISTINCT ?name ?relevance ?subject
+	SELECT DISTINCT ?name ?relevance ?resourceEntity ?subject
 	WHERE {
 
 #        ?resourceEntity rdf:type ?type .
 #		FILTER regex(str(?type), "^http://s.opencalais.com/1/type/em/e/*") .
-        ?resourceEntity rdf:type <http://s.opencalais.com/1/type/em/e/Technology> .
-		?subject c:name ?name .
-		?descriptionA c:subject ?subject .
-		?descriptionA c:relevance ?relevance .
-		?descriptionA c:docId ?docId .
+
+        ?descriptionA c:relevance ?relevance .
+        ?descriptionA c:docId ?docId .
+
+
+		?resourceEntity c:name ?name .
+		?resourceEntity rdf:type <http://s.opencalais.com/1/type/em/e/Technology> .
 	}
 ORDER BY DESC(?relevance)

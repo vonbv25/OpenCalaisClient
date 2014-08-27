@@ -61,6 +61,8 @@ public class CalaisREST {
      * @return
      * @throws Exception
      */
+
+
     public static String getCalaisRdfText(String url) throws Exception {
         ClientConfig clientConfig = new DefaultClientConfig();
         Client client = Client.create(clientConfig);

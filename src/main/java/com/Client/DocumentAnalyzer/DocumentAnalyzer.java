@@ -20,9 +20,12 @@ import java.io.IOException;
  * Created by OJT4 on 8/1/14.
  *
  */
+
 public class DocumentAnalyzer {
 
     private static int MAX_DOC_SIZE = Configuration.getCurrent_config().getMaxdocSize();
+
+
 
     /**
      * run Open calais SOAP Analyzer and save the response to output.xml
@@ -46,8 +49,6 @@ public class DocumentAnalyzer {
             }
              Document outdoc = analyzer.getDocumentFromRdf(content);
 
-             System.out.println(outdoc.toString());
-
              RDFXMLUtils.serializeDoc(outdoc);
          }
          catch (IOException e) {
@@ -55,6 +56,7 @@ public class DocumentAnalyzer {
          }
         return true;
     }
+
 
     private String readfile(String filePath) throws Exception{
         BufferedReader in = null;
@@ -92,7 +94,7 @@ public class DocumentAnalyzer {
             // set root element of the output XML
             Node Response = xdoc.createElement("Response");
             xdoc.appendChild(Response);
-
+//
             EnrichSocialTags enrichSocialTags= new EnrichSocialTags();
             enrichSocialTags.enrich(createSection(Response
                     ,"SocialTags","SocialTag","Queries/SocialTag.sparql",content,"subject"));
@@ -101,11 +103,6 @@ public class DocumentAnalyzer {
             enrichCompanies.enrich(createSection(
                     Response, "Companies", "Company",
                     "Queries/Company.sparql", content, "subject"));
-
-            EnrichTechnology enrichTechnology= new EnrichTechnology();
-            enrichTechnology.enrich(createSection(
-                    Response, "SocialTags", "SocialTag",
-                    "Queries/SocialTag.sparql", content, "subject"));
 
             EnrichGeo enrichGeo= new EnrichGeo();
             enrichGeo.enrich(createSection(
@@ -116,6 +113,11 @@ public class DocumentAnalyzer {
             enrichProducts.enrich(createSection(
                     Response, "Products", "Product",
                     "Queries/Products.sparql", content, "subject"));
+
+            EnrichTechnology enrichTechnology= new EnrichTechnology();
+            enrichTechnology.enrich(createSection(
+                    Response, "Technology", "Technologies",
+                    "Queries/Technology.sparql", content, "subject"));
 
 
             return xdoc;

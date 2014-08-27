@@ -36,6 +36,7 @@ public class EnrichProducts extends AbstractEnricher {
             Node subjectNode = RDFXMLUtils.getNodeByName(product, "subject");
             product.removeChild(subjectNode);
 
+            //the resource URI must be in .rdf
             Document linkedData = OpenCalais.getCalaisRdf(resourceUri + ".rdf");
 
             if(linkedData!=null) {

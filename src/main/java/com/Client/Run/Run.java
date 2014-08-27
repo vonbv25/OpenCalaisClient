@@ -14,7 +14,6 @@ public class Run {
             if (!isrunning) {
                 System.out.print("error in running the analyzer");
             }
-
         } catch (Exception ex) {
             ex.printStackTrace();
         }

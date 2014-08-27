@@ -51,6 +51,7 @@ public class EnrichCompanies extends AbstractEnricher {
             Node subjectNode = RDFXMLUtils.getNodeByName(company, "subject");
             company.removeChild(subjectNode);
 
+            //the resource URI must be in .rdf
             Document linkedData = OpenCalais.getCalaisRdf(resourceUri + ".rdf");
 
             //test

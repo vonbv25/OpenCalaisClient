@@ -1,11 +1,14 @@
 package DocumentAnalyzer;
 
+import com.Client.DocumentAnalyzer.Configuration;
 import com.Client.DocumentAnalyzer.DocumentAnalyzer;
 import com.Client.DocumentAnalyzer.OpenCalais;
+import jdk.internal.util.xml.impl.XMLWriter;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.FileWriter;
 import java.io.StringReader;
 
 
@@ -21,7 +24,7 @@ public class OpenCalaisTest {
 
     public static String output = null;
 
-    public static String content ="C:\\Users\\OJT4\\Documents\\OpenCalaisClient\\src\\Tests\\DocumentAnalyzer\\CNN.txt";
+    public static String content ="C:\\Users\\OJT4\\Documents\\OpenCalaisClient\\src\\Tests\\DocumentAnalyzer\\CNN2.txt";
     @Before
     public void setUp() throws Exception {
         output = OpenCalais.getCalaisRDFText(content, APIKEY);

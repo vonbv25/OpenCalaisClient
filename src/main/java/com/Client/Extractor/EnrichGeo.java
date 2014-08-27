@@ -15,8 +15,8 @@ public class EnrichGeo extends AbstractEnricher {
 
 
     /**
-     * Extract geographies
-     * @param placesNodes
+     * Extract entities pertaining to geographies
+     * example:
      * @throws Exception
      */
     @Override
@@ -37,6 +37,7 @@ public class EnrichGeo extends AbstractEnricher {
             Node subjectNode = RDFXMLUtils.getNodeByName(place, "subject");
             place.removeChild(subjectNode);
 
+            //the resource URI must be in .rdf
             Document linkedData = OpenCalais.getCalaisRdf(resourceUri + ".rdf");
             if(linkedData!=null) {
                 XPath xpath = RDFXMLUtils.getXPath(linkedData);
